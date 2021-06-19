@@ -24,6 +24,7 @@ jobs:
           path: public/ # upload everything found in public folder
 
   test:
+    needs: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
